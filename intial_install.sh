@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if command -v apt-get >/dev/null; then
-	apt-get install git zsh wget curl vim -y
+	sudo apt-get install git zsh wget curl vim -y
 elif command -v yum >/dev/null; then
-	yum install git zsh wget curl vim -y
+	sudo yum install git zsh wget curl vim -y
 else
   echo "I have no Idea what im doing here"
 fi
@@ -14,3 +14,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ln -sf ~/dotfile/vimrc ~/.vimrc
 ln -sf ~/dotfile/tmux.conf ~/.tmux.conf
 ln -sf ~/dotfile/zshrc ~/.zshrc
+source ~/.zshrc
