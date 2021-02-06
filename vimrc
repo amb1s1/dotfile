@@ -17,7 +17,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'thinca/vim-quickrun'
-Plug 'neomake/neomake'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'cohama/agit.vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
@@ -128,12 +127,6 @@ set smartcase " case-sensitive if expresson contains a capital letter
 set hlsearch
 set incsearch " set incremental search, like modern browsers
 set showmatch " show matching braces
-
-" Neomake
-autocmd! BufWritePost * Neomake
-let g:neomake_typescript_enabled_makers = ['tslint']
-let g:neomake_css_enabled_makers = ['stylelint']
-let g:neomake_javascript_enabled_makers = ['eslint']
 
 "Airline options
 let g:airline_powerline_fonts=1
