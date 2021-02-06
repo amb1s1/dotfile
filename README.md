@@ -7,6 +7,9 @@
         \/                \/                 \/     \/
 ```
 
+# Simple Dotfiles
+Create this simple dotfiles to be use on linux.
+**Tested** On Debian
 ## Installation
 #### Install Git
 ##### On a Debian-based distribution, such as Ubuntu, try apt:
@@ -25,7 +28,7 @@ sudo yum install git-all
 
 #### Run the following lines(Make)
 ```
-git clone https://github.com/amb1s1/dotfiles.git ~/ ; cd ~/dotfiles
+git clone https://github.com/amb1s1/simple-dotfiles.git ~/ ; cd ~/simple-dotfiles
 ./install.sh
 ```
 
