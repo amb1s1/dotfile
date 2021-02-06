@@ -18,9 +18,9 @@ sleep 1s
 touch ~/.vimrc
 touch ~/.tmux.conf
 touch ~/.zshrc
-ln -sf ~/dotfile/vimrc ~/.vimrc
-ln -sf ~/dotfile/tmux.conf ~/.tmux.conf
-ln -sf ~/dotfile/zshrc ~/.zshrc
+ln -sf ~/simple-dotfiles/vimrc ~/.vimrc
+ln -sf ~/simple-dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/simple-dotfiles/zshrc ~/.zshrc
 vim +PluginInstall +qall
 zsh
 vim +PluginUpdate +qall
