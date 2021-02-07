@@ -1,9 +1,9 @@
 #!/bin/bash
 USER=$(whoami)
 if command -v apt-get >/dev/null; then
-	sudo apt-get install git zsh wget curl vim tmux build-essential -y
+	sudo apt-get install git zsh wget curl vim tmux build-essential tar -y
 elif command -v yum >/dev/null; then
-	sudo yum install git zsh wget curl vim tmux -y
+	sudo yum install git zsh wget curl vim tmux tar -y
     sudo yum groupinstall 'Development Tools' -y
 else
   echo "I have no Idea what im doing here"

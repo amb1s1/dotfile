@@ -113,4 +113,3 @@ alias bat="/usr/local/bat/bat"
 # tmux alias
 alias tma='tmux new -A -s'
 alias tmls='tmux ls | awk "{ print \$1 }"'
-
