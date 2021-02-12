@@ -12,7 +12,8 @@ export ZSH=$HOME/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
+alias vim="nvim"
+alias vi="nvim"
 if [ -d "$HOME/.local/vim/bin/"  ] ; then
       PATH="$HOME/.local/vim/bin/:$PATH"
 fi
@@ -114,3 +115,4 @@ alias bat="/usr/local/bat/bat"
 alias tma='tmux new -A -s'
 alias tmls='tmux ls | awk "{ print \$1 }"'
 PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin
+PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin:/usr/local/go/bin

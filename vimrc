@@ -1,39 +1,7 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.nvim/plugged')
 "common
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'uarun/vim-protobuf'
-Plug 'nvie/vim-flake8'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'majutsushi/tagbar'
-Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'rking/ag.vim', { 'on': 'Ag' }
-Plug 'thinca/vim-quickrun'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'cohama/agit.vim'
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-surround'
-Plug 'lepture/vim-jinja'
-"Jade
-Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] }
-"Python
-" Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop'  }
-Plug 'mitsuhiko/vim-python-combined', { 'for': 'python' }
-"Elm
-Plug 'ElmCast/elm-vim', { 'for': 'elm' }
-"PYTHON
-Plug 'zchee/deoplete-jedi'
-"Ansible YAML
-Plug 'pearofducks/ansible-vim'
 "Themes
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
@@ -44,13 +12,8 @@ Plug 'jacoborus/tender.vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'lifepillar/vim-solarized8'
 Plug 'rakr/vim-one'
-"Markdown
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-"TOML
-Plug 'cespare/vim-toml', { 'for': 'toml' }
-Plug 'tmhedberg/SimpylFold'
 call plug#end()
-
+let g:go_version_warning = 0
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized8_high
