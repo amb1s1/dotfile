@@ -1,7 +1,11 @@
 #!/bin/bash
 USER=$(whoami)
 if command -v apt-get >/dev/null; then
-	sudo apt-get install git zsh wget curl vim tmux build-essential tar neo-vim -y
+	sudo apt-get update
+	sudo apt install software-properties-common git zsh wget curl vim tmux build-essential tar -y
+	sudo add-apt-repository ppa:neovim-ppa/stable 
+	sudo apt-get update
+        sudo apt-get install neovim
 elif command -v yum >/dev/null; then
 	sudo yum install git zsh wget curl vim tmux tar -y
     sudo yum groupinstall 'Development Tools' -y
@@ -16,7 +20,6 @@ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shel
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
 sleep 1s
 mkdir -p ~/.nvim
 mkdir -p ~/.config/nvim
