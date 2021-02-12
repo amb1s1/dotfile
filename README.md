@@ -49,4 +49,3 @@ If you see a `VIM` error not finding a THEME, do the following:
 1. Open VIM (no need to specify a file name)
 2. type `shift+:` and type `PluginUpdate` enter
 
-

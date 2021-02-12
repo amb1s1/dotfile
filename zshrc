@@ -113,3 +113,4 @@ alias bat="/usr/local/bat/bat"
 # tmux alias
 alias tma='tmux new -A -s'
 alias tmls='tmux ls | awk "{ print \$1 }"'
+PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin
