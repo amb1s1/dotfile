@@ -11,6 +11,8 @@
 Create this simple dotfiles to be use on linux.
 **Tested** On:
     1. Ubuntu 18.04 
+    2. Ubuntu 20.04 
+
 ## Installation
 #### Install Git
 ##### On a Debian-based distribution, such as Ubuntu, try apt:
