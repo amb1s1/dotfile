@@ -9,7 +9,8 @@
 
 # Simple Dotfiles
 Create this simple dotfiles to be use on linux.
-**Tested** On Debian
+**Tested** On:
+    1. Ubuntu 18.04 
 ## Installation
 #### Install Git
 ##### On a Debian-based distribution, such as Ubuntu, try apt:
@@ -51,8 +52,7 @@ If you see a `VIM` error not finding a THEME, do the following:
 
 ### Test your install 
 #### Get the example code
-
-##### The example code is part of the grpc-go repo.
+The example code is part of the grpc-go repo.
 
 ##### Download the repo as a zip file and unzip it, or clone the repo:
 
