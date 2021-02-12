@@ -2,13 +2,14 @@
 USER=$(whoami)
 if command -v apt-get >/dev/null; then
 	sudo apt-get update
-	sudo apt install software-properties-common git zsh wget curl vim tmux build-essential tar -y
+	sudo apt install software-properties-common zsh curl tmux tar nodejs -y
 	sudo add-apt-repository ppa:neovim-ppa/stable 
-	sudo apt-get update
-        sudo apt-get install neovim
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.lis
+    sudo apt update
+    sudo apt install neovim yarn -y
 elif command -v yum >/dev/null; then
 	sudo yum install git zsh wget curl vim tmux tar -y
-    sudo yum groupinstall 'Development Tools' -y
 else
   echo "I have no Idea what im doing here"
 fi
@@ -34,7 +35,3 @@ vim +PluginInstall +qall
 zsh
 vim +PluginUpdate +qall
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.lis
-sudo apt update
-sudo apt install yarn

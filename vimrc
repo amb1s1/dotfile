@@ -2,6 +2,7 @@ call plug#begin('~/.nvim/plugged')
 "common
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Themes
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
