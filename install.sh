@@ -35,4 +35,3 @@ ln -sf ~/simple-dotfiles/zshrc ~/.zshrc
 vim +PluginInstall +qall
 zsh
 vim +PluginUpdate +qall
-base16_nord
