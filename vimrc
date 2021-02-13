@@ -3,6 +3,7 @@ call plug#begin('~/.nvim/plugged')
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
 "Themes
 Plug 'chriskempson/base16-vim'
 call plug#end()
@@ -105,6 +106,14 @@ endif
 map <F2> :set nu! rnu!<CR>
 map <F5> :setlocal spell! spelllang=en_us<CR>
 
+" vim-go settings
+let g:go_fmt_command = "goimports"
+let g:go_auto_type_info = 1
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+let g:go_def_mapping_enabled = 0
 
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
@@ -173,11 +182,6 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-" disable vim-go :GoDef short cut (gd)
-" this is handled by LanguageClient [LC]
-let g:go_def_mapping_enabled = 0
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings END
 " -------------------------------------------------------------------------------------------------
