@@ -1,5 +1,4 @@
 #!/bin/bash
-ZSH_CUSTOM_THEME=$HOME/.oh-my-zsh/custom
 USER=$(whoami)
 if command -v apt-get >/dev/null; then
 	sudo apt-get update
@@ -14,8 +13,8 @@ else
 fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sleep 1s
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM_THEME/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM_THEME/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM_THEME/themes/spaceship.zsh-theme"
+git clone https://github.com/denysdovhan/spaceship-prompt.git ~/.oh-my-zsh/custom/themes/spaceship-prompt
+ln -s ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom//themes/spaceship.zsh-theme
 sudo chsh -s $(which zsh) $USER
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
