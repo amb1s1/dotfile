@@ -13,8 +13,9 @@ else
 fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sleep 1s
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 sudo chsh -s $(which zsh) $USER
-git clone https://github.com/lifepillar/vim-solarized8.git ~/.vim/pack/themes/opt/solarized8
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -31,9 +32,7 @@ ln -sf ~/simple-dotfiles/vimrc ~/.config/nvim/init.vim
 ln -sf ~/simple-dotfiles/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf ~/simple-dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/simple-dotfiles/zshrc ~/.zshrc
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 vim +PluginInstall +qall
 zsh
 vim +PluginUpdate +qall
-
+base16_nord
