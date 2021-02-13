@@ -32,6 +32,4 @@ ln -sf ~/simple-dotfiles/vimrc ~/.config/nvim/init.vim
 ln -sf ~/simple-dotfiles/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf ~/simple-dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/simple-dotfiles/zshrc ~/.zshrc
-vim +PluginInstall +qall
 zsh
-vim +PluginUpdate +qall
