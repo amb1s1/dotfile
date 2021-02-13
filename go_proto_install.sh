@@ -9,4 +9,3 @@ else
 fi
 curl -fLo ~/$GOVERSION https://golang.org/dl/$GOVERSION
 sudo tar -C /usr/local -xzf ~/$GOVERSION
-echo "PATH=$PATH:/usr/local/go/bin" >> ~/simple-dotfiles/zshrc

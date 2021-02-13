@@ -11,7 +11,20 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
+
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stamps section
+  user          # Username section
+  host
+  dir           # Current directory section
+  exec_time     # Execution time
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  char          # Prompt character
+)
+
 alias vim="nvim"
 alias vi="nvim"
 if [ -d "$HOME/.local/vim/bin/"  ] ; then
@@ -116,3 +129,4 @@ alias tma='tmux new -A -s'
 alias tmls='tmux ls | awk "{ print \$1 }"'
 PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin
 PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin:/usr/local/go/bin
+PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin:/usr/local/go/bin:/usr/local/go/bin

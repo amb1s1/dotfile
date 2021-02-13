@@ -2,10 +2,8 @@
 USER=$(whoami)
 if command -v apt-get >/dev/null; then
 	sudo apt-get update
-	sudo apt install software-properties-common zsh curl tmux tar nodejs -y
+	sudo apt install software-properties-common zsh curl tmux tar nodejs fonts-powerline -y
 	sudo add-apt-repository ppa:neovim-ppa/stable 
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.lis
     sudo apt update
     sudo apt install neovim yarn -y
 elif command -v yum >/dev/null; then
@@ -31,6 +29,8 @@ ln -sf ~/.vim ~/.nvim
 ln -sf ~/simple-dotfiles/vimrc ~/.config/nvim/init.vim
 ln -sf ~/simple-dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/simple-dotfiles/zshrc ~/.zshrc
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 vim +PluginInstall +qall
 zsh
 vim +PluginUpdate +qall
