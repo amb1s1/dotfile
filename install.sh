@@ -23,10 +23,12 @@ sleep 1s
 mkdir -p ~/.nvim
 mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.vim
+touch ~/.config/nvim/coc-settings.json
 touch ~/.tmux.conf
 touch ~/.zshrc
 ln -sf ~/.vim ~/.nvim
 ln -sf ~/simple-dotfiles/vimrc ~/.config/nvim/init.vim
+ln -sf ~/simple-dotfiles/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf ~/simple-dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/simple-dotfiles/zshrc ~/.zshrc
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
