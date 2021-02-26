@@ -4,8 +4,8 @@ if command -v apt-get >/dev/null; then
 	sudo apt-get update
 	sudo apt install software-properties-common zsh curl tmux tar nodejs fonts-powerline -y
 	sudo add-apt-repository ppa:neovim-ppa/stable 
-    sudo apt update
-    sudo apt install neovim yarn -y
+    	sudo apt update
+    	sudo apt install neovim yarn -y
 elif command -v yum >/dev/null; then
 	sudo yum install git zsh wget curl vim tmux tar -y
 else

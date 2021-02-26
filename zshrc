@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/golib
-export PATH=$HOME/grpc/bins/opt/:$HOME/bin:/usr/local/bin:$GOPATH/bin:$GOROOT/bin:/home/gomdavid/.yarn/bin:$PATH
-export GOPATH=$GOPATH:$HOME/mygocode
+export GOPATH=/usr/local/go/bin 
+export PATH=$HOME/grpc/bins/opt/:$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -127,6 +125,3 @@ alias bat="/usr/local/bat/bat"
 # tmux alias
 alias tma='tmux new -A -s'
 alias tmls='tmux ls | awk "{ print \$1 }"'
-PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin
-PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin:/usr/local/go/bin
-PATH=/home/gomdavid/grpc/bins/opt/:/home/gomdavid/bin:/usr/local/bin:/home/gomdavid/golib/bin:/usr/local/go/bin:/home/gomdavid/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin:/usr/local/go/bin:/usr/local/go/bin
