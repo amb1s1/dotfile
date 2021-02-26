@@ -11,12 +11,13 @@ import (
 )
 
 type server struct {
-	pb.UnimplementedGreeterServer
+	pb.UnimplementedElejirEquipoServer
 }
 
 func (s *server) GetCiudad(ctx context.Context, in *pb.CiudadRequest) (*pb.CiudadRepuesta, error) {
 	ciudad := "Santiago"
-	return ciudad, nil
+	result := &pb.CiudadRepuesta{Ciudad: ciudad}
+	return result, nil
 }
 func main() {
 	fmt.Println("vim-go")
@@ -25,7 +26,7 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 	s := grpc.NewServer()
-	pb.RegisterElejirEquipoServe(s)
+	pb.RegisterElejirEquipoServer(s, &server{})
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
 	}
