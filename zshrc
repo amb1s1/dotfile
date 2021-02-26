@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export GOPATH=/usr/local/go/bin 
+export GOPATH=$HOME/golib 
 export PATH=$HOME/grpc/bins/opt/:$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
