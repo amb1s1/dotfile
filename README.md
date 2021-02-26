@@ -17,16 +17,8 @@ Create this simple dotfiles to be use on linux.
 #### Install Git
 ##### On a Debian-based distribution, such as Ubuntu, try apt:
 ```
-sudo apt-get install git-all
-```
-
-##### RPM-based distribution, such as RHEL or CentOS), you can use dnf
-```
-sudo dnf install git-all
-```
-or
-```
-sudo yum install git-all
+sudo apt update 
+sudo apt install git -y
 ```
 
 #### Run the following lines(Make)
