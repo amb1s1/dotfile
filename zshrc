@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export GOPATH=$HOME/gocode
-export PATH=$HOME/grpc/bins/opt/:$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
+export PATH=/usr/local/go/bin:$HOME/grpc/bins/opt/:$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
